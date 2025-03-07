@@ -14,7 +14,7 @@ public class IndividualTaxpayer extends Taxpayer {
 
     @Override
     public double calculateTaxes() {
-        var rate = this.getAnnualIncome() < 20_000.00 ? 0.15: 0.25;
+        var rate = this.getAnnualIncome() < 20_000.00 ? 0.15 : 0.25;
         return this.getAnnualIncome() * rate - this.getHealthExpenditures() * 0.50;
     }
 }
